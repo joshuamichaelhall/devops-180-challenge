@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+
+require_relative 'lib/challenge_manager'
+
+# Main entry point for the DevOps 180 Challenge CLI
+begin
+  ChallengeManager.new.run(ARGV)
+rescue StandardError => e
+  puts "Error: #{e.message}"
+  exit 1
+end
