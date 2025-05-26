@@ -26,12 +26,12 @@ A curated collection of high-quality resources for each phase of the DevOps 180 
 
 ## 🔐 Phase 2: Security & Compliance
 
-### Courses
+### Security Courses
 - [Professor Messer Security+ SY0-701](https://www.professormesser.com/security-plus/sy0-701/sy0-701-video/sy0-701-comptia-security-plus-course/)
 - [AWS Security Fundamentals](https://aws.amazon.com/training/course-descriptions/security-fundamentals/)
 - [SANS Cyber Aces](https://www.cyberaces.org/) - Free security tutorials
 
-### Books
+### Security Books
 - "CompTIA Security+ Get Certified Get Ahead" by Darril Gibson
 - "AWS Security Best Practices" - AWS Whitepaper
 - "The Web Application Hacker's Handbook" by Dafydd Stuttard
@@ -48,17 +48,17 @@ A curated collection of high-quality resources for each phase of the DevOps 180 
 
 ## 🏗️ Phase 3: Infrastructure as Code
 
-### Courses
+### IaC Courses
 - [HashiCorp Learn](https://learn.hashicorp.com/terraform) - Official Terraform tutorials
 - [Terraform on AWS](https://learn.hashicorp.com/collections/terraform/aws-get-started)
 - [Infrastructure Automation with Terraform](https://www.udemy.com/course/terraform-beginner-to-advanced/)
 
-### Books
+### IaC Books
 - "Terraform: Up & Running" by Yevgeniy Brikman (2nd Edition)
 - "Infrastructure as Code" by Kief Morris
 - "The Terraform Book" by James Turnbull
 
-### Practice Resources
+### IaC Practice Resources
 - [Terraform Registry](https://registry.terraform.io/) - Modules and providers
 - [Terraform Challenges](https://github.com/terraform-aws-modules) - Real-world modules
 - [KodeKloud Terraform Labs](https://kodekloud.com/courses/terraform-for-beginners/)

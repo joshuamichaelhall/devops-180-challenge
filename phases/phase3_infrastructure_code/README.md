@@ -184,7 +184,7 @@ Track your progress in each area (1-5 scale):
 
 ## 📝 Module Template Structure
 
-```
+```text
 terraform-aws-example/
 ├── README.md
 ├── main.tf
