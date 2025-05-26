@@ -1,5 +1,9 @@
 # The DevOps 180 Challenge: 6 Months to Cloud Career 🚀
 
+[![CI](https://github.com/joshuamichaelhall/devops-180-challenge/actions/workflows/ci.yml/badge.svg)](https://github.com/joshuamichaelhall/devops-180-challenge/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![GitHub Stars](https://img.shields.io/github/stars/joshuamichaelhall/devops-180-challenge?style=social)](https://github.com/joshuamichaelhall/devops-180-challenge/stargazers)
+
 A structured 180-day journey to transform from IT professional to job-ready DevOps Engineer, focusing on AWS, Security, and Infrastructure as Code.
 
 ## 📊 Current Progress

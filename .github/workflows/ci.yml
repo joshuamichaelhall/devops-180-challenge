@@ -1,0 +1,54 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    
+    strategy:
+      matrix:
+        ruby-version: ['2.7', '3.0', '3.1']
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Set up Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: ${{ matrix.ruby-version }}
+    
+    - name: Run tests
+      run: |
+        cd scripts
+        ruby -c devops
+        ruby -c lib/*.rb
+    
+    - name: Check file permissions
+      run: |
+        test -x scripts/devops
+        test -x scripts/install.sh
+    
+    - name: Validate templates
+      run: |
+        for template in scripts/templates/*.md; do
+          if [[ -f "$template" ]]; then
+            echo "Checking $template"
+            grep -q "{{" "$template" || echo "Warning: No template variables found in $template"
+          fi
+        done
+
+  markdown-lint:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Markdown Lint
+      uses: DavidAnson/markdownlint-cli2-action@v9
+      with:
+        globs: '**/*.md'
