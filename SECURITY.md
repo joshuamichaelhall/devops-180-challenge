@@ -12,9 +12,9 @@ We take security seriously in the DevOps 180 Challenge project. If you discover 
 
 ### DO
 
-1. Email security concerns to: devops180-security@joshuamichaelhall.com
+1. Open a private issue or contact me directly on LinkedIn
 2. Include:
-   - Description of the vulnerability
+   - Description of the concern
    - Steps to reproduce
    - Potential impact
    - Suggested fix (if available)

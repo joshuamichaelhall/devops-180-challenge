@@ -254,7 +254,7 @@ Each phase includes a capstone project:
 
 ### Contact
 - Creator: [@joshuamichaelhall](https://github.com/joshuamichaelhall)
-- Email: devops180@joshuamichaelhall.com
+- Email: contact@joshuamichaelhall.com
 - Website: [joshuamichaelhall.com](https://joshuamichaelhall.com)
 
 ---
