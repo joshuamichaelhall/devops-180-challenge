@@ -2,6 +2,7 @@ require_relative 'challenge_config'
 require_relative 'day_tracker'
 require_relative 'git_manager'
 require_relative 'challenge_logger'
+require_relative 'weekly_integration'
 
 class ChallengeManager
   def run(args)
@@ -24,6 +25,10 @@ class ChallengeManager
       show_resources(args[1])
     when 'help'
       show_help
+    when 'week'
+      show_weekly_plan
+    when 'sync'
+      sync_weekly_plans
     else
       puts "Unknown command: #{command}"
       show_help
@@ -147,9 +152,54 @@ class ChallengeManager
         devops cert       - Track certification progress
         devops project    - Manage projects
         devops resource   - Access learning resources
+        devops week       - Show current week's plan from career-tracker
+        devops sync       - Sync weekly plans from career-tracker
         devops help       - Show this help message
       
       Learn more: https://github.com/joshuamichaelhall/devops-180-challenge
     HELP
+  end
+  
+  def show_weekly_plan
+    day = DayTracker.current_day
+    integration = WeeklyIntegration.new(day)
+    week = ((day - 1) / 7) + 1
+    
+    puts "📋 Week #{week} Plan (Day #{day}/180)"
+    puts "=" * 50
+    
+    objectives = integration.get_week_objectives
+    if objectives.any?
+      puts "🎯 Week Objectives:"
+      objectives.each { |obj| puts "  • #{obj}" }
+      puts ""
+    end
+    
+    focus = integration.get_daily_focus
+    if focus
+      puts "📍 Today's Focus:"
+      puts "  Learning: #{focus[:learning_focus]}" if focus[:learning_focus]
+      puts "  Project: #{focus[:project_milestone]}" if focus[:project_milestone]
+      puts "  Network: #{focus[:networking_targets]}" if focus[:networking_targets]
+      puts "  Content: #{focus[:content_tasks]}" if focus[:content_tasks]
+    else
+      puts "No weekly plan found for week #{week}."
+      puts "Run 'devops sync' to sync plans from career-tracker."
+    end
+    
+    puts ""
+    puts "📂 Full plan: ~/repos/devops-career-tracker/weekly/week-#{week}-checklist.md"
+  end
+  
+  def sync_weekly_plans
+    puts "🔄 Syncing weekly plans from career-tracker..."
+    
+    sync_script = File.join(File.dirname(__FILE__), '..', 'sync', 'sync-weekly-plans.rb')
+    if File.exist?(sync_script)
+      system("ruby #{sync_script}")
+    else
+      puts "❌ Sync script not found. Creating it now..."
+      # Would create the sync script here
+    end
   end
 end

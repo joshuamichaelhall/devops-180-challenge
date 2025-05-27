@@ -1,0 +1,20 @@
+# DevOps 180 Challenge Configuration
+# This file links to your private career-tracker
+
+# Path to career tracker (used by sync scripts)
+CAREER_TRACKER_PATH="~/repos/devops-career-tracker"
+
+# Start date for the challenge
+CHALLENGE_START_DATE="2025-06-01"
+
+# Phase mapping to career-tracker weeks
+# Phase 1 (AWS): Weeks 1-8 from career-tracker
+# Phase 2 (Security): Weeks 9-16 from career-tracker  
+# Phase 3 (IaC): Weeks 17-24 from career-tracker
+
+# Privacy settings
+PUBLIC_LOGS=true
+SYNC_PRIVATE_DETAILS=false
+
+# Integration mode
+USE_CAREER_TRACKER_PLANS=true

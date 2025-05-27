@@ -125,7 +125,7 @@ Each phase includes a capstone project:
 - Write blog posts about your journey
 
 ### Join the Community
-- Discord: [Join here](https://discord.gg/devops180)
+- LinkedIn: Connect for discussions and networking
 - Weekly virtual meetups
 - Find accountability partners
 - Get help when stuck
@@ -249,7 +249,7 @@ Each phase includes a capstone project:
 ### Resources
 - GitHub Issues for bugs
 - Discussions for questions
-- Discord for real-time chat
+- LinkedIn messaging for professional networking
 - Weekly office hours
 
 ### Contact

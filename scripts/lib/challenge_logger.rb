@@ -1,5 +1,6 @@
 require 'date'
 require 'fileutils'
+require_relative 'weekly_integration'
 
 class ChallengeLogger
   def initialize
@@ -22,6 +23,18 @@ class ChallengeLogger
       .gsub('{{PHASE_NAME}}', phase_info[:name])
       .gsub('{{PHASE_NUMBER}}', phase.to_s)
       .gsub('{{FOCUS_AREA}}', phase_info[:focus].first)
+    
+    # Integrate weekly plan if available
+    integration = WeeklyIntegration.new(day)
+    weekly_content = integration.generate_daily_template
+    
+    # Insert weekly content after the focus area
+    if weekly_content && !weekly_content.empty?
+      insertion_point = content.index("## 📋 Today's Plan")
+      if insertion_point
+        content = content[0...insertion_point] + weekly_content + "\n" + content[insertion_point..-1]
+      end
+    end
     
     log_path = daily_log_path(day)
     File.write(log_path, content)

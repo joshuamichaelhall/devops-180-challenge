@@ -100,7 +100,7 @@ A curated collection of high-quality resources for each phase of the DevOps 180 
 ### Communities
 - [r/devops](https://www.reddit.com/r/devops/) - DevOps subreddit
 - [r/aws](https://www.reddit.com/r/aws/) - AWS community
-- [DevOps Chat on Discord](https://discord.gg/devops) - Real-time discussions
+- [Connect on LinkedIn](https://linkedin.com/in/joshuamichaelhall) - Professional networking and discussions
 
 ## 📱 Mobile Learning
 

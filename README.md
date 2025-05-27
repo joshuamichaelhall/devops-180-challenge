@@ -67,7 +67,7 @@ Each phase includes hands-on projects:
 
 ## 👥 Join the Community
 
-- **Discord**: [Join our server](https://discord.gg/devops180)
+- **LinkedIn**: [Connect with me](https://linkedin.com/in/joshuamichaelhall)
 - **Weekly Meetups**: Thursdays at 7 PM EST
 - **Study Groups**: Form cohorts with other participants
 - **Mentorship**: Connect with experienced DevOps engineers
@@ -122,3 +122,8 @@ Inspired by the 100 Days of Code challenge and the DevOps community.
 **Start your DevOps journey today!** Fork this repo and begin Day 1 of your transformation.
 
 [⭐ Star this repo](https://github.com/joshuamichaelhall/devops-180-challenge) | [🐦 Tweet your progress](https://twitter.com/intent/tweet?text=I%27m%20starting%20the%20%23DevOps180%20Challenge!%20180%20days%20to%20transform%20my%20career%20into%20DevOps.%20Join%20me!%20https://github.com/joshuamichaelhall/devops-180-challenge)
+## 🤝 Connect with Me
+
+I'm Joshua Michael Hall, and I'm taking the DevOps 180 Challenge to transition into a DevOps engineering role. Follow my journey and connect with me on LinkedIn: https://linkedin.com/in/joshuamichaelhall
+
+Let's learn and grow together\!
