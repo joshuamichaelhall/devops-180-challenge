@@ -37,6 +37,7 @@
 
 ## 🔜 Tomorrow's Plan
 *Refer to Career Tracker Week {{CAREER_WEEK}} checklist*
-- 
+
+- [Add tomorrow's tasks here]
 
 ## 💭 Reflections
