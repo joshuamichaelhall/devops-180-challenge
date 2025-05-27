@@ -36,7 +36,7 @@
 - **Progress**: ⬜⬜⬜⬜⬜ (0/5)
 
 ## 🔜 Tomorrow's Plan
-_Refer to Career Tracker Week {{CAREER_WEEK}} checklist_
+*Refer to Career Tracker Week {{CAREER_WEEK}} checklist*
 - 
 
 ## 💭 Reflections
