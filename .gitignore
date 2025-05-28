@@ -87,3 +87,7 @@ $RECYCLE.BIN/
 
 # Linux
 .directory
+
+# Obsidian workspace files
+.obsidian/
+.obsidian/*
