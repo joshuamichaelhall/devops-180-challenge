@@ -69,7 +69,7 @@ Each weekly plan includes:
 
 ### Networking (4-6 hours/week)
 - Daily connection targets
-- LeadDelta CRM management
+- SuiteCRM management
 - Strategic relationship building
 
 ### Content Creation (3-5 hours/week)
